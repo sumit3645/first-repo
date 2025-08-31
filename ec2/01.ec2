@@ -1,0 +1,46 @@
+create a ec2
+ssh -i 
+HOW TO CHECK OS RELAESE
+- cat /etc/os-release
+- free -m                           ..........to check ram
+- ip -a
+
+suppose you have created a ec2 on ap-south-1a az and suppose your your friend and everyone created on same az ap-south-1a and there is three az 
+and all load going on only ap-south-1a then there is a lot of load on tha az . how aws manaze this is for you its ap-south-1a but for other it 
+should be different az
+
+ls -lh                             ..........to check file directory
+sudo -i 
+apt-get update
+nginx -t                           .........to check nginx config or not
+apt-get install nginx
+service nginx status
+curl localhost
+cd /var/www/html/
+ls                                you will see a file {index.nginx-debian.html}
+cat index.nginx-debian.html
+-/var/www/html/ $ echo "Sumit is an DevOps Data Engineer"> index.html
+curl localhost
+  ~{Sumit is an DevOps Data Engineer}
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------
+  userdata
+  [ #!/bin/bash
+    apt-get update
+    apt-get install nginx -y
+    echo "Sumit is an DevOps Data Engineer"> /var/www/html/index.html ]   .... this userdata always runs as root user
+ -------------------------------------------------------------------------------------------------------------------------------------------------------
+ security group
+ what kind of traffic will come to your instaces is defined in sg and we can only config allow traffic denied is not allowed
+ inbound rule
+ type     protocol     portrange    source ip
+ ssh      tcp           22          ---------                       ......{ec2 instances k port 22 pe jo bhi traffic aayega usko aloowed hoga but kisko allowed 
+                                                                            hoga ye source me batana padeaga means ip dalna padega }
+                                                                            
+
+    
+    
+
+
+  
+
