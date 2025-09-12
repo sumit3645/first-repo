@@ -1,0 +1,5 @@
+create a bucket 
+uploads some image and try to accsess it through object url
+that url didnt work becouse we didnt attached any policy , fisrt we have to attaches allow policy
+go to permission edit policy. type of policy s3 bucket policy, prinipal *, getobject, add-statemnet,
+paste your policy and make sure your public access in off
