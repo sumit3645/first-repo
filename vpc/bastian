@@ -1,0 +1,5 @@
+create 2 ec2 one in private and one public
+ssh public ec2 
+how to connect to private subnet ec2 for that first we have to save pem.file in ec2{public subnet}
+vi sumitkey.pem , paste your pem file then save it
+ssh -i sumitkey.pem ubuntu@<private_ip_ec2>
